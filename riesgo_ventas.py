@@ -91,7 +91,7 @@ st.container()
 col1, col2 = st.columns([1, 5])
 with col1:
     try:
-        image = Image.open(r"C:\Users\zahar\OneDrive\Escritorio\predicciones\seguro1.jpg")
+        image = Image.open("seguro1.jpg")
         st.image(image, width=60)
     except FileNotFoundError:
         st.info("No se encontró la imagen 'seguro1.jpg' en la ruta especificada.")
